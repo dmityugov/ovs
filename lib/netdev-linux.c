@@ -6381,7 +6381,7 @@ read_psched(void)
     }
 
     ticks_per_s = (double) a * c / b;
-    if (c == 1000000) {
+    if (c == 1000000 && d) {
         buffer_hz = d;
     } else {
         VLOG_WARN("%s: unexpected psched parameters: %u %u %u %u",
