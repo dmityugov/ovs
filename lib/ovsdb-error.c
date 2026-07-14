@@ -34,6 +34,7 @@ struct ovsdb_error {
     int errno_;                 /* Unix errno value, 0 if none. */
 };
 
+__attribute__((format(printf, 2, 0)))
 static struct ovsdb_error *
 ovsdb_error_valist(const char *tag, const char *details, va_list args)
 {

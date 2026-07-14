@@ -1147,6 +1147,7 @@ netdev_afxdp_rxq_destruct(struct netdev_rxq *rxq_ OVS_UNUSED)
     /* Nothing. */
 }
 
+__attribute__((format(printf, 2, 0)))
 static int
 libbpf_print(enum libbpf_print_level level,
              const char *format, va_list args)
